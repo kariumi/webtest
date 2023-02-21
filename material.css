@@ -1,0 +1,515 @@
+body {
+	background-color:#a0a0a0;
+color:#000000;
+margin:0px;
+padding:0px;
+text-align:center;
+background-image: url("http://kariumi.michikusa.jp/wood.png");
+-ms-interpolation-mode: nearest-neighbor;   
+image-rendering: -webkit-optimize-contrast; 
+image-rendering: -moz-crisp-edges;          
+image-rendering: -o-crisp-edges;            
+image-rendering: pixelated; 
+}
+::selection {
+    background: #ffa500;
+    color: #191970;
+}
+::-moz-selection {
+    background: #ffa500;
+    color: #191970;
+}
+
+#box {
+	border:3px solid #d2b48c;
+	background-color:#fffacd;		
+	height: 200px;
+	overflow: auto;
+}
+#outer {
+background-color:#ffffff;
+margin:10px 20px 10px 20px;
+font-size:large;
+box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.7);
+}
+#header {
+padding:0px 0px 0px 0px;
+margin: 0px;
+height:100px;
+text-align:center;
+background-color:#ffee91;
+}
+.img_href {
+    /*変化にかかる時間とタイミング、進行具合を指定*/
+    -webkit-transition: 0.3s ease-in-out;  
+    transition: 0.3s ease-in-out;  
+}
+ 
+/*オンマウス時に実行*/
+.img_href:hover {
+    /*透明度具合を指定*/
+    opacity: 0.7;  
+    filter: alpha(opacity=60);  
+}
+
+.content {
+	float:left;
+	width:100%;
+	text-align: center;
+}
+div.cntents{
+	   display: table;
+	width:100%;
+}
+div.contents div.box1 {
+   display: table-cell;
+   width: 50%;
+   padding:0 1em 0 0;
+}
+div.contents div.border {
+   display: table-cell;
+   width: 1%;
+   border-left:solid 1px #808080;
+}
+div.contents div.box2 {
+   display: table-cell;
+   width: 50%;
+}
+.page_top{
+    position:relative;
+
+}
+div.page_top2{
+	margin:0px auto;
+	text-align: center;
+	background-image:url("page_top.png");
+	width:300px;
+	height: 50px;
+	transition:0.3s;
+}
+div.page_top2:hover{
+		margin:0px auto;
+	text-align: center;
+	background-image:url("page_top_on.png");
+	width:300px;
+	height: 50px;
+}
+.inner{
+margin:0px 20px 0px 20px;
+padding:0px 0px 0px 0px;
+text-align:left;
+}
+#right {
+color:#000000;
+font-size:16px;
+font-weight:normal;
+width:370px;
+float:left;
+text-align:left;
+padding:17px 0px 0px 0px;
+}
+#text-right{
+	text-align:right;
+	vertical-align:top
+}
+.right-title {
+	font-size:13px;
+	margin:0px 26px 0px 0px;
+	padding:5px 10px 5px 20px;
+	font-weight:bold;
+	background-color:#e5e5ff;
+	text-align:left;
+	border-left: solid 5px #9e9eff;
+	border-bottom: solid 3px #d7d7d7;
+	font-size:19px;
+}
+.link {
+text-align: left;
+margin:0px 26px 10px 0px;
+padding:10px 8px 10px 13px;
+line-height:170%;
+border: 1px solid #c7c7c7;
+}
+.link a{
+font-weight:normal;
+font-size:13px;
+color:#003366;
+text-decoration:none;
+}
+.link a:hover{
+text-decoration:underline;
+}
+ul {
+margin: 0 0 0 1em;
+padding: 0;
+}
+li {
+list-style:disk; 
+}
+P {
+margin:1em 0 1em 0;
+line-height:150%;
+}
+img{
+border:0px;
+}
+hr {
+border-width: 1px 0px 0px 0px;
+border-style: solid;
+border-color: #cccccc;
+height: 1px;
+}
+a{
+font-weight:normal;
+border-bottom-width: 1px;
+border-bottom-color: #CCCCCC;
+color: #003366;
+}
+
+
+h1 {
+font-weight:bold;
+text-align:center;
+color:#ff7577;
+font-size:2em;
+margin: 0px -20px 0px -20px;
+padding:0px 0px;
+background-color: #287727;
+border-top:solid 10px #b9c446;
+border-bottom:solid 10px #b9c446;
+box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.7);
+text-shadow:6px 4px 7px #1f1f1f;
+}
+h1:first-letter {
+font-size: 2em;
+color: #ffbfbf;
+}
+h1 a{
+font-weight:bold;
+color:#357109;
+text-decoration:none;
+}
+h1 a:hover{
+text-decoration:underline;
+}
+h2 {
+	font-size:16px;
+	margin:20px 0px 0px 0px;
+	padding:5px 10px 5px 20px;
+	font-weight:bold;
+	background-color:#e5e5ff;
+	text-align:left;
+	border-left: solid 7px #9e9eff;
+	border-bottom: solid 7px #4682b4;
+	font-size:19px;
+		border-right: 7px solid #3e6b6b;
+	border-top: 7px solid #add8e6;
+}
+h2 a{
+font-weight:bold;
+text-decoration: none;
+color:#265699;
+}
+h3 {
+font-weight:bold;
+text-align:center;
+color:#5bffe6;
+font-size:2em;
+margin: 0 -20px;
+padding:0px 0px;
+background-color: #287727;
+border-top:solid 10px #b9c446;
+border-right:solid 10px #b9c446;
+border-left:solid 10px #b9c446;
+text-shadow:6px 4px 7px #1f1f1f;
+}
+h3:first-letter {
+font-size: 2em;
+color: #00aeff;
+}
+h3 a{
+font-weight:bold;
+color:#357109;
+text-decoration:none;
+}
+h3 a:hover{
+text-decoration:underline;
+}
+.link{
+	padding:20px 100px;
+	margin:0px -20px;
+	background-color: #229649;
+	color:#ffffff;
+	font-weight: bold;
+	border-right:solid 10px #919943;
+	border-left:solid 10px #919943;
+	border-top:solid 3px #919943;
+	box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.7) inset;
+	text-shadow:6px 4px 7px #1f1f1f;
+}
+.link a{
+	font-size:x-large;
+	transition:0.2s;
+}
+.link a:link { 
+	color: #ffd700; 
+	font-weight: bold;
+	text-decoration: none;
+}
+.link a:visited { 
+	color: #ffd700; 
+	font-weight: bold;
+	text-decoration: none;
+}
+.link a:hover { 
+	color: #adff2f; 
+	text-decoration: none;
+}
+.link a:active { 
+	color: #d2b48c; 
+	text-decoration: none;
+}
+.terms{
+	padding:20px 100px;
+	margin:0px -20px;
+	background-color: #229649;
+		color:#ffffff;
+	font-weight: bold;
+	border-right:solid 10px #919943;
+	border-left:solid 10px #919943;
+	border-top:solid 3px #919943;
+	box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.7) inset;
+	text-shadow:6px 4px 7px #1f1f1f;
+}
+.terms a{
+	transition:0.2s;
+}
+.terms a:link { 
+	color: #ffffff; 
+	font-weight: bold;
+	text-decoration: none;
+}
+.terms a:visited { 
+	color: #ffffff; 
+	font-weight: bold;
+	text-decoration: none;
+}
+.terms a:hover { 
+	color: #adff2f; 
+	text-decoration: none;
+}
+.terms a:active { 
+	color: #d2b48c; 
+	text-decoration: none;
+}
+h4 {
+font-size:16px;
+color: #000000;
+padding-left: 5px;
+}
+h4 a{
+text-decoration: none;
+color:#265699;
+}
+dt{
+	color:yellow;
+}
+#footer {
+	background-color:#dcdcdc;
+color:#666666;
+font-size:12px;
+height:70px;
+margin:0px -20px;
+text-align: center;
+clear:left;
+}
+.pagetop {
+padding-right:35px;
+text-align:right;
+}
+blockquote{
+border:1px solid #ccc;
+padding:5px;
+margin:10px;
+}
+.dot {
+  -ms-interpolation-mode: nearest-neighbor;   
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges;          
+  image-rendering: -o-crisp-edges;            
+  image-rendering: pixelated;      
+    -webkit-transition: 0.2s ease-in-out;  
+    transition: 0.2s ease-in-out;          
+}
+.dot:hover{
+	    opacity: 0.5;  
+    filter: alpha(opacity=20);
+}
+.do {
+  -ms-interpolation-mode: nearest-neighbor;   
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges;          
+  image-rendering: -o-crisp-edges;            
+  image-rendering: pixelated;                
+    -webkit-transition: 0.2s ease-in-out;  
+    transition: 0.2s ease-in-out; 
+        background-color:#ffffff;          
+}
+.do:hover{
+	    opacity: 0.5;  
+    filter: alpha(opacity=20);
+}
+.ot {
+  -ms-interpolation-mode: nearest-neighbor;   
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges;          
+  image-rendering: -o-crisp-edges;            
+  image-rendering: pixelated;                
+    -webkit-transition: 0.2s ease-in-out;  
+    transition: 0.2s ease-in-out; 
+        background-color:#ffffff;          
+}
+.ot:hover{
+	    opacity: 0.5;  
+    filter: alpha(opacity=20);
+}
+.dots {
+  -ms-interpolation-mode: nearest-neighbor;   
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges;          
+  image-rendering: -o-crisp-edges;            
+  image-rendering: pixelated;                
+    -webkit-transition: 0.2s ease-in-out;  
+    transition: 0.2s ease-in-out;         
+}
+.dots:hover{
+	    opacity: 0.5;  
+    filter: alpha(opacity=20);
+}
+.dots1 {
+	-ms-interpolation-mode: nearest-neighbor;   
+	image-rendering: -webkit-optimize-contrast; 
+	image-rendering: -moz-crisp-edges;          
+	image-rendering: -o-crisp-edges;            
+	image-rendering: pixelated;                
+	  -webkit-transition: 0.2s ease-in-out;  
+	  transition: 0.2s ease-in-out;         
+  }
+  .dots1:hover{
+		  opacity: 0.5;  
+	  filter: alpha(opacity=20);
+  }
+.dt {
+  -ms-interpolation-mode: nearest-neighbor;   
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges;          
+  image-rendering: -o-crisp-edges;            
+  image-rendering: pixelated;                
+    -webkit-transition: 0.2s ease-in-out;  
+    transition: 0.2s ease-in-out;         
+}
+.dt:hover{
+	    opacity: 0.5;  
+    filter: alpha(opacity=20);
+}
+.dot2 {
+  -ms-interpolation-mode: nearest-neighbor;   
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -moz-crisp-edges;          
+  image-rendering: -o-crisp-edges;            
+  image-rendering: pixelated;  
+  }
+#menu ul{
+margin: 0; 
+padding: 0; 
+list-style: none;
+}
+#menu li{ 
+display: inline; 
+padding: 0; 
+margin: 0; 
+float: left;
+}
+#menu li a{
+display: block;
+width: 100px;
+padding: 3px;
+margin: 0px 0px 10px 0px;
+text-decoration: none;
+border:outset 3px #C2CBBD;
+background-color: #C2CBBD;
+text-align: center;
+color: #000000;
+font-size: 14px;
+}
+#menu li a:hover{
+border: inset 3px #95A38D;
+background-color: #95A38D;
+}
+
+#menu3 ul{
+margin: 0px auto; 
+padding: 0; 
+list-style-type: none;
+}
+#menu3 li{ 
+display: inline; 
+padding: 0; 
+margin: 0px auto; 
+}
+#menu3 li a{
+display: block;
+width: 150px;
+padding: 3px 50px 3px 50px;
+margin: 10px auto;
+text-decoration: none;
+border: outset 4px #00ff2e;
+background-color: #00ff2e;
+text-align: center;
+color: #000000;
+font-size: 20px;
+}
+#menu3 li a:hover{
+border: inset 4px #00911a;
+background-color: #00911a;
+color: #4f0909;
+}
+
+.back {
+	background-color: #6495ed; 
+	padding:5px 10px 50px 20px;
+	border-right: 7px solid #4682b4;
+	border-left: solid 7px #4682b4;
+	border-bottom: solid 7px #708090;
+}
+.q {
+	margin:1em 10em 1px 10em;
+    padding:2em;
+    border: ridge 10px #4ec4d3;
+    background-color: #add8e6;
+    	       border-radius: 1em;
+    	       box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.7);
+
+}
+.q p {
+    margin: 0; 
+    padding: 0;
+}
+.h{
+	background-color: #ffffff;
+	border-bottom:solid 1px #000000;
+	    font-weight: bold;
+	    font-size:x-large;
+	    box-shadow: 0px 5px 20px gray inset,0px -5px 20px gray inset, 0px 5px 20px black;
+}
+.b{
+	background-image: url("http://kariumi.michikusa.jp/background/main.png");
+	border:solid 1px #000000;
+	box-shadow: 0px 0px 20px 2px black inset, 0px 0px 20px 2px black;
+	margin:0px 8em;
+}
+
+
+div.center {text-align:center;}
+.centerclass{margin:0px auto;
+box-shadow: 0px 0px 10px 3px black;}

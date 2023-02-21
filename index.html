@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta http-equiv="Content-Script-Type" content="text/javascript" />
+   <title>かりうむのドット部屋:お手軽ウィンドウ素材</title>
+   <meta name="keywords" content="ウディタ,素材,アイコン,素材" />
+   <meta name="description" content="ウディタ用のお手軽ウィンドウ素材を配布しています。" />
+   <link rel="stylesheet" href="material.css" type="text/css" />
+   <link rel="shortcut icon" type="img/png" href="http://kariumi.michikusa.jp/favicon.png" />
+
+   <!--jquery-->
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+   <script>
+      $(function () {
+         $('a[href^=#]').click(function () {
+            var speed = 400;
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({ scrollTop: position }, speed, 'swing');
+            return false;
+         });
+      });
+   </script>
+
+</head>
+
+
+
+<body>
+
+
+   <div id="outer">
+
+      <div id="header"><img src="http://kariumi.michikusa.jp/index_img/title.png">
+         <!--メニュー-->
+         <span id="menu">
+            <ul>
+               <li><a href="http://kariumi.michikusa.jp/">TOP</a></li>
+               <li><a href="http://kariumi.michikusa.jp/game.html">ゲーム</a></li>
+               <li><a href="http://kariumi.michikusa.jp/material.html">素材</a></li>
+               <li><a href="http://kariumi.blog-rpg.com/">ブログ</a></li>
+               <li><a href="http://kariumi.michikusa.jp/link.html">リンク</a></li>
+               <li><a href="http://kariumi.michikusa.jp/log.html">更新履歴</a></li>
+            </ul>
+         </span>
+         <!--メニュー-->
+      </div><br>
+      <!--↓メイン↓-->
+      <div id="content">
+         <div class="inner">
+
+
+            <br>
+            <br>
+            <b>
+               <font size=6 color="red">※素材は左クリックのみで保存できます。</font><br>
+               <font color="blue">IE等のブラウザは対応してない可能性があります。</font>
+            </b>
+            <br clear="all">
+            <!--メインフリー-->
+            <a href="icon/type/box/box1.png" download="box1.png" 　title="赤印の小箱"><img class="dot" width="12" height="12"
+                  src="icon/type/box/box1.png" alt="赤印の小箱"></a>
+
+
+
+            <!--↑メイン↑-->
+            <br><br><br><br><br>
+         </div>
+      </div>
+
+
+      <!--右カラムなし-->
+      <!--右カラムなし-->
+
+
+
+
+
+
+
+
+      <!--フッター-->
+      <div id="footer">
+         © 2017 kalium<br>
+         <!-- shinobi ct2 -->
+         <script type="text/javascript" src="//ct2.shinobi.jp/sc/1733520"></script>
+         <noscript><a href="//ct2.shinobi.jp/gg/1733520"><img src="//ct2.shinobi.jp/ll/1733520" border="0"
+                  alt="カウンター" /></a></noscript>
+         <!-- /shinobi ct2 -->
+      </div>
+      <!--フッター-->
+   </div>
+
+
+   <div style="position:fixed;bottom:10px;right:10px;"><a href="#">
+         <img src="http://kariumi.michikusa.jp/index_img/top_off.png" border="0"
+            onMouseOver="this.src='http://kariumi.michikusa.jp/index_img/top_on.png'"
+            onMouseOut="this.src='http://kariumi.michikusa.jp/index_img/top_off.png'" /></a>
+   </div>
+
+
+
+</body>
+
+</html>
